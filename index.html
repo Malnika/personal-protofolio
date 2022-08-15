@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Malnika- Personal Website</title>
+</head>
+
+<body>
+    <section>
+        <!-- profile picture. resume, contact section -->
+        <div class="intro">
+            <img src="profile.jpg" alt="profile-picture">
+            <div class="intro-text">
+                <h1>I am <span>Malnika</span></h1>
+                <h2>I aspire to be a <span>Software Engineer</span></h2>
+            </div>
+        </div>
+        <div class="intro-download-contact">
+            <a href="" download="resume.pdf">Download Resume</a>
+            <a href="#contact">Contact me</a>
+        </div>
+    </section>
+    <hr>
+
+    <section>
+        <!-- about me section -->
+        <div class="about-me-container">
+            <div class="about-me">
+                <h2>About Me</h2>
+                <p>Ever since I can remember, I have been inclined towards learning programming languages. My first
+                    rendezvous with computer was at the age of 11 when I started learning my first programming language,
+                    Basic. Introducing myself I am Malnika Shrestha with young, energetic, and enthusiastic mindset.
+                    Apart from studies, I have always been a nature lover. I prefer strolling around parks and inhaling
+                    the scent of fresh nature in my leisure time. Regarding my hobbies, I love dancing and just having
+                    bunch of snacks.</p>
+            </div>
+            <div class="basic-info">
+                <h2>Basic Infomation</h2>
+                <table>
+                    <tr>
+                        <td>Age:</td>
+                        <td>19</td>
+                    </tr>
+                    <tr>
+                        <td class="table-design">Email:</td>
+                        <td class="table-design"> malnikastha11@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Language:</td>
+                        <td>English, Nepali</td>
+                    </tr>
+                    <tr>
+                        <td class="table-design">Class Section:</td>
+                        <td class="table-design">ZBB</td>
+                    </tr>
+                    <tr>
+                        <td>Student Id:</td>
+                        <td>151531217</td>
+                    </tr>
+                    <tr></tr>
+                    <td class="table-design">Instructor:</td>
+                    <td class="table-design">Noman Atique</td>
+
+                </table>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <!-- Education section -->
+        <h1 class="edu-title">Education</h1>
+        <div class="education-container1">
+            <div class="education-title">
+                <h3>Higher Secondary Level</h3>
+                <h4>2018-2021</h4>
+            </div>
+            <div class="education-info">
+                <h3>Higher Secondary Level</h3>
+                <h5>KIST College & SS</h4>
+                    <p>Completed my higher secondary schooling as a student of Science Faculty</p>
+            </div>
+        </div>
+
+        <div class="education-container2">
+            <div class="education-title">
+                <h3>Diploma</h3>
+                <h4>2021-2023(Expected)</h4>
+            </div>
+            <div class="education-info">
+                <h3>Diploma in Computer Programming</h3>
+                <h5>SENECA COLLEGE</h5>
+                    <p>Currently enrolled as a second semester student of Diploma in Computer Porgramming degree</p>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="contact">
+        <!-- Contact section -->
+        <h1 class="contact-title">Contact me</h1>
+        <div class="form">
+            <form action="https://httpbin.org/post" method="post">
+                <label for="name">Name:</label>
+                <input type="text" required="" placeholder="Your Name"  class="input-field"> <br>
+                <label for="email">Email Address:</label>
+                <input type="email" required="" placeholder="Your Email" class="input-field"> <br>
+                <label for="contact number">Contact number:</label>
+                <input type="number" required="" placeholder="Your Conatact Number" class="input-field"> <br>
+                <label for="address">Address:</label>
+                <input type="text" required="" placeholder="Your Address" class="input-field"> <br>
+                <label for="city">City:</label>
+                <input list="cities" required="" class="input-field"> <br>
+                <datalist id="cities">
+                    <option value="Montreal">
+                    <option value="Toronto">
+                    <option value="Vancouver">
+                    <option value="Victoria">
+                    <option value="Halifax">
+                    <option value="Quebec City">
+                    <option value="Calgary">
+                    <option value="Ottawa">
+                </datalist>
+                <label for="postal code">Postal Code:</label>
+                <input type="number" required="" class="input-field"> <br>
+                <label for="Reason behid contact">Reason Behind Contact: </label>
+                <input type="radio" value="hiring" name="radio-btn" id="hiring" onclick="fn()"> Hiring </input>
+                <input type="radio" value="comment" name="radio-btn"> Comment</input>
+                <input type="radio" value="question" name="radio-btn"> Question </input> <br>
+                <input type="text" name="" id="rate" class="input-field" placeholder="Enter your rate per hour"> <br>
+                <label for="textarea">Write your message here: </label>
+                <textarea name="" id="" cols="30" rows="5"></textarea> <br>
+                <input type="submit" class="submit">
+            </form>
+        </div>
+    </section>
+
+
+<script src="app.js"></script>
+</body>
+
+</html>
